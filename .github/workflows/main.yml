@@ -19,7 +19,9 @@ jobs:
         chmod +x avbtool
         sudo mv avbtool /usr/local/bin/avbtool
     - name: Kernel Build
-      run: echo 11 | ./ts-build-clang-14.sh
+      run: |
+        chmod +x ts-build-clang-14.sh
+        echo 11 | ./ts-build-clang-14.sh
     - name: Upload Kernel Zip
       uses: actions/upload-artifact@v2
       with:
