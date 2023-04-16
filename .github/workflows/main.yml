@@ -18,15 +18,8 @@ jobs:
         wget -q https://android.googlesource.com/platform/external/avb/+archive/refs/heads/android10-dev.tar.gz -O - | tar xzf - avbtool
         chmod +x avbtool
         sudo mv avbtool /usr/local/bin/avbtool
-    - name: Install toolchain
-      run: |
-        git submodule deinit --force --all
-        rm -fr toolchain
-        git add .
-        mkdir toolchain
-        git submodule add --branch arter97 https://github.com/CruelKernel/samsung-exynos9820-toolchain toolchain/arter97
     - name: Kernel Build
-      run: echo 11 | ./ts-build-arter97.sh
+      run: echo 11 | ./ts-build-clang-14.sh
     - name: Upload Kernel Zip
       uses: actions/upload-artifact@v2
       with:
