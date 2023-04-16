@@ -1,4 +1,4 @@
-# ThunderStormS Kernel for Samsung Galaxy :
+# ThunderStormS Kernel for Samsung Galaxy : 
 # S10 & Note10 devices
 
 Kernel Project by Team ThunderStorms
