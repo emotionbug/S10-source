@@ -54,8 +54,8 @@ MAIN()
     #./build mkimg model=G977N name="$K_NAME-$K_BASE-$ANDROID-$MODEL-$K_VERSION" toolchain=clang-14 +magisk=v24.3 +dtb
     elif [ $MODEL = "N970F" ]; then
     ./build mkimg model=N970F name="$K_NAME-$K_BASE-$ANDROID-$MODEL-$K_VERSION" toolchain=clang-14 +magisk=v24.3 +dtb
-    #elif [ $MODEL = "N971N" ]; then
-    #./build mkimg model=N971N name="$K_NAME-$K_BASE-$ANDROID-$MODEL-$K_VERSION" toolchain=clang-14 +magisk=v24.3 +dtb
+    elif [ $MODEL = "N971N" ]; then
+    ./build mkimg model=N971N name="$K_NAME-$K_BASE-$ANDROID-$MODEL-$K_VERSION" toolchain=clang-14 +magisk=v24.3 +dtb
     elif [ $MODEL = "N975F" ]; then
     ./build mkimg model=N975F name="$K_NAME-$K_BASE-$ANDROID-$MODEL-$K_VERSION" toolchain=clang-14 +magisk=v24.3 +dtb
     #elif [ $MODEL = "N976N" ]; then
